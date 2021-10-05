@@ -14,3 +14,34 @@ function lx_baz(com, _)
   # do whatever you want here
   return uppercase(brace_content)
 end
+
+"""
+Create a photo gallery containing all images in `tdd-pics` directory.
+Allowed formats are png, jpeg, jpg.
+"""
+Franklin.@delay function hfun_gallery()
+    # gather list of relative paths to pictures
+    rpaths = [joinpath("/tdd-pics", pn) for pn in readdir("tdd-pics") if endswith(pn, r".png|.jpeg|.jpg")]
+
+    # start writing the html for gallery container
+    io = IOBuffer()
+    write(io, "<div class=\"gallery_container\">")
+
+    # create gallery photo divs
+    for rp in rpaths
+        alt_text = splitext(rp)[1][10:end]
+        write(io, """
+            <div class=\"gallery\">
+                <a target=\"_blank\" href=$rp>
+                    <img src=$rp alt=$alt_text width=\"600\" height=\"400\">
+                </a>
+            </div>
+            """)
+    end
+
+    # finish writing html for gallery contatiner
+    write(io, "</div>")
+
+    # pass html to render page
+    return String(take!(io))
+end

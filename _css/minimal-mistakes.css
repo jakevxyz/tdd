@@ -679,7 +679,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #494e52;
+  color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   line-height: 1.5;
 }
@@ -1409,12 +1409,12 @@ th {
 }
 
 .btn--primary:visited {
-  background-color: #6f777d;
+  background-color: #231f20;
   color: #fff;
 }
 
 .btn--primary:hover {
-  background-color: #595f64;
+  background-color: #c42121;
   color: #fff;
 }
 
@@ -2147,12 +2147,12 @@ th {
 .greedy-nav a {
   display: block;
   margin: 0 1rem;
-  color: #6f777d;
+  color: #231f20;
   text-decoration: none;
 }
 
 .greedy-nav a:hover {
-  color: #53595e;
+  color: #c42121;
 }
 
 .greedy-nav a.site-logo {
@@ -2737,7 +2737,7 @@ th {
 }
 
 .archive__item-title .ais-Highlight {
-  color: #6f777d;
+  color: #231f20;
   font-style: normal;
   text-decoration: underline;
 }
@@ -3677,9 +3677,9 @@ a.reversefootnote:hover {
 .page__hero--overlay {
   position: relative;
   margin-bottom: 2em;
-  padding: 3em 0;
+  padding: 6em 0;
   clear: both;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-animation: intro 0.3s both;
@@ -4129,6 +4129,10 @@ a.reversefootnote:hover {
 
 .archive__item-title a + a {
   opacity: 0.5;
+}
+
+.archive__item-title svg {
+  color: #c42121;
 }
 
 .page__content .archive__item-title {

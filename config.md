@@ -2,7 +2,7 @@
 Add here global page variables to use throughout your website.
 -->
 +++
-author = "TD Diesel LLC"
+author = "TD Diesel & Parts"
 mintoclevel = 2
 hascode = false
 
