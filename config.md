@@ -6,6 +6,12 @@ author = "TD Diesel & Parts"
 mintoclevel = 2
 hascode = false
 
+# Contact Information
+phone = "770 531-0407"
+email = "info@tddparts.com"
+address = "4290 Holly Springs Rd. Gillsville, GA"
+facebook = "https://www.facebook.com/TD-Diesel-Parts-105861875199755"
+
 # Add here files or directories that should be ignored by Franklin, otherwise
 # these files might be copied and, if markdown, processed by Franklin which
 # you might not want. Indicate directories by ending the name with a `/`.

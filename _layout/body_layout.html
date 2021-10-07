@@ -15,13 +15,13 @@
             <button class="btn btn--inverse">Follow</button>
             <ul class="author__urls social-icons">
               <li itemprop="homePhone" itemscope itemtype="https://schema.org/Place">
-                <i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="name">770 531-0407</span></li>
+                <i class="fa fa-phone" aria-hidden="true"></i> <span itemprop="name">{{ phone }}</span></li>
               <li itemprop="homeEmail" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-envelope" aria-hidden="true"></i> <span itemprop="name">info@tddparts.com</span></li>
+                <i class="fas fa-envelope" aria-hidden="true"></i> <span itemprop="name">{{ email }}</span></li>
               <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">4290 Holly Springs Rd. Gillsville, GA</span></li>
-              <li><a href="https://www.facebook.com/TD-Diesel-Parts-105861875199755" rel="nofollow noopener noreferrer">
-                <i class="fab fa-facebook-square" aria-hidden="true"></i> {{author}} Facebook</a></li>
+                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ address }}</span></li>
+              <li><a href="{{ facebook }}" rel="nofollow noopener noreferrer">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i> {{ author }}</a></li>
             </ul>
           </div>
         </div>
